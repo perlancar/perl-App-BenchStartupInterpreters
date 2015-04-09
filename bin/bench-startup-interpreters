@@ -19,6 +19,7 @@ Benchmark::Command::run(100, {
 
 1;
 # ABSTRACT: Benchmark startup time of various interpreters
+# PODNAME:
 
 =head1 SYNOPSIS
 
