@@ -1,5 +1,11 @@
 Revision history for App-BenchStartupInterpreters
 
+0.02    2015-04-12 (PERLANCAR)
+
+	- Add option: skip_not_found to skip interpreters not found on the
+	  system.
+
+
 0.01    2015-04-09 (PERLANCAR)
 
         - First release.
