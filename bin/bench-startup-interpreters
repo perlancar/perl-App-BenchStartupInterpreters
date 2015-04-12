@@ -9,13 +9,19 @@ use warnings;
 
 use Benchmark::Command;
 
-Benchmark::Command::run(100, {
-    perl        => [qw/perl -e1/],
-    "bash+true" => [qw/bash --norc -c true/],
-    ruby        => [qw/ruby -e1/],
-    python      => [qw/python -c1/],
-    nodejs      => [qw/nodejs -e 1/],
-});
+Benchmark::Command::run(
+    100,
+    {
+        perl        => [qw/perl -e1/],
+        "bash+true" => [qw/bash --norc -c true/],
+        ruby        => [qw/ruby -e1/],
+        python      => [qw/python -c1/],
+        nodejs      => [qw/nodejs -e 1/],
+    },
+    {
+        skip_not_found => 1,
+    },
+);
 
 1;
 # ABSTRACT: Benchmark startup time of various interpreters
