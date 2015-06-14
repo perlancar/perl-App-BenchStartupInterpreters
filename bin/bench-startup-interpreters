@@ -10,7 +10,7 @@ use warnings;
 use Benchmark::Command;
 
 Benchmark::Command::run(
-    100,
+    undef,
     {
         perl        => [qw/perl -e1/],
         "bash+true" => [qw/bash --norc -c true/],
@@ -23,7 +23,6 @@ Benchmark::Command::run(
     },
 );
 
-1;
 # ABSTRACT: Benchmark startup time of various interpreters
 # PODNAME:
 
