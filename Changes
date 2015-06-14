@@ -1,5 +1,11 @@
 Revision history for App-BenchStartupInterpreters
 
+0.03    2015-06-14 (PERLANCAR)
+
+	- Adjust to Benchmark::Command 0.08 (allow count to be configurable
+	  via env BENCHMARK_COMMAND_COUNT).
+
+
 0.02    2015-04-12 (PERLANCAR)
 
 	- Add option: skip_not_found to skip interpreters not found on the
